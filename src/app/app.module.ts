@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import { HumaneTranslateModule } from './humane-translate/humane-translate.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    HumaneTranslateModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
