@@ -1,10 +1,11 @@
 {
     "--lang": "no",
+    "--spec": "0.1.0",
 
-    "--// app metadata": null,
+    "// APP METADATA": null,
 
-    "Humane Translate // app name"
+    "Humane Translate"
     :"Humane Translate",
-    "Easy translation mechanism with human readable string references // app description"
+    "Easy translation mechanism with human readable string references"
     :"Enkel oversettelse mekanisme med menneskelige lesbare strengreferanser"
 }
