@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 
+import { TranslateService } from './humane-translate/translate.service';
+
 @Component({
   selector: 'app-root',
   template: `
     <div style="text-align:center">
-      <h2>{{tl("Humane Translate")}}</h2>
+      <h2>{{t.l("Humane Translate")}}</h2>
 
-      <p>{{tl("Easy translation mechanism with human readable string references")}}.</p>
+      <p>{{t.l("Easy translation mechanism with human readable string references")}}.</p>
     </div>
     
     <router-outlet></router-outlet>
@@ -14,5 +16,10 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'app';
+  title = this.t.l("Humane Translate");
+  
+  constructor(
+    public t: TranslateService
+  ) {
+  }
 }

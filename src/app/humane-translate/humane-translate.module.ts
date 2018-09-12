@@ -1,18 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+
+import { TranslateService } from "./translate.service";
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   providers: [], // Do not add services here: add them in forRoot()
   declarations: []
 })
 export class HumaneTranslateModule {
-  static forRoot() {
+  static forRoot = () => {
     return {
       ngModule: HumaneTranslateModule,
-      providers: []
-    }
+      providers: [
+        TranslateService
+      ]
+    };
   }
 }
